@@ -47,7 +47,17 @@ namespace Calcolatrice
 
         public double Sottrazione()
         {
-            return Num1 + Num2;
+            return Num1 - Num2;
         }
+        public double Moltiplicazione()
+        {
+            return Num1 * Num2;
+        }
+
+        public double Divisione()
+        {
+            return Num1 / Num2;
+        }
+
     }
 }
