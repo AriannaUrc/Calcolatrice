@@ -59,14 +59,14 @@ namespace Calcolatrice
             return Num1 / Num2;
         }
 
-        public string SempFrazione() 
+        public string SempFrazione(int num1, int num2) 
         {
-            double gcd = GCD(Num1, Num2);
-            return (Num1/gcd).ToString() + "/" + (Num2 / gcd).ToString();
+            double gcd = GCD(num1, num2);
+            return (num1/gcd).ToString() + "/" + (num2 / gcd).ToString();
 
         }
 
-        double GCD(double a, double b)
+        public double GCD(double a, double b)
         {
             while (b > 0)
             {
