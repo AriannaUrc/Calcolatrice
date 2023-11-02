@@ -23,9 +23,10 @@ namespace Calcolatrice
             double decPart = num - (int)num;
             string temp = decPart.ToString();
             int lenghtDec = temp.Length - 2;
-            int temptemp = (int) (decPart * lenghtDec);
+            double denom = Math.Pow(10, lenghtDec);
+            double temptemp = (decPart * denom);
 
-            return SempFrazione(temptemp, 10^lenghtDec);
+            return SempFrazione((int)temptemp, (int)denom);
         }
 
         public string Power_of_fraction(int numer, int denom, int pow)

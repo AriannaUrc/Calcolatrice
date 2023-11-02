@@ -15,6 +15,8 @@ namespace Calcolatrice
         public Form1()
         {
             InitializeComponent();
+            Calc_ex calc = new Calc_ex();
+            MessageBox.Show(calc.Double_to_fraction(0.25));
         }
 
         private void Form1_Load(object sender, EventArgs e)
