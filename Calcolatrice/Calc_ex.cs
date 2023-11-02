@@ -20,7 +20,12 @@ namespace Calcolatrice
 
         public string Double_to_fraction(double num)
         {
-            return "";
+            double decPart = num - (int)num;
+            string temp = decPart.ToString();
+            int lenghtDec = temp.Length - 2;
+            int temptemp = (int) (decPart * lenghtDec);
+
+            return SempFrazione(temptemp, 10^lenghtDec);
         }
 
         public string Power_of_fraction(int numer, int denom, int pow)
